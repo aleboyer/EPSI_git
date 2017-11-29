@@ -220,7 +220,7 @@ def init_axes(fig):
 
 
 def open_datafile(filename='SBE_EPSI_hex.dat'):
-    fid=open('/Users/aleboyer/ARNAUD/SCRIPPS/SHEAR_PROBE/PROCESS_EPSI/data/' + filename,'br')
+    fid=open('../data/' + filename,'br')
     eof=fid.seek(0,2)
     fid.seek(eof-8*1050) 
     line=fid.readline()
